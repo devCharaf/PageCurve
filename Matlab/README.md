@@ -1,5 +1,7 @@
 ## README
-In this file you have:
+
+This file contains all the MAtlab scripts used to plot the figures in the report. It contains:
+
   * f2.m: plots the funtction $f_2(\mu)$ (figure 5.4 in the report)
   * alpha.m: plots the wall as a function of \sigma (figure 5.6 in the report)
   * Wall.m: plots the wall in the compactified coordinates (\rho,x) (figure 5.7 in the report)
