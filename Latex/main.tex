@@ -1,0 +1,130 @@
+% load lecture note class
+\documentclass{easyclass}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{pgfplots}
+% \usepackage{cite}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{tikz}
+\usetikzlibrary{decorations.pathmorphing}
+\newcommand*{\ctikz}[2][]{\hbox{\mathsurround=3pt$\vcenter{\hbox{\tikz[#1]{#2}}}$}}
+\usetikzlibrary{arrows.meta}
+\newcommand*{\I}{\mathrm{i}}
+\usepackage{pstricks}
+\usetikzlibrary{intersections}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.11}
+\usepgfplotslibrary{fillbetween}
+\usepackage{amsmath}
+
+\begin{document}
+\begin{titlepage}
+    %\university{EPFL}
+    \courseid{Fields and Strings Laboratory}
+    \title{Page Curve of Holographic Interfaces}
+    \author{EL FATTAHI Charaf-ed-dine}
+    \version{Spring 2021}
+    \supervisor{Supervisors: Prof.~João Penedones \par \quad ~~~~~~Kelian Häring\par}
+    \maketitle
+\end{titlepage}
+
+\chapter*{Abstract}
+    This note aims to study the Page curve of a gravitational system featuring a wall separating two geometries. This system was found by taking the limit of large degrees of freedom in one slice of the dual geometry of an ICFT sitting in its spacetime boundary and taking the limit of large boundary in the other slice. The dominant phase in this limit is found to be a bulk solution with a horizon on each side with the wall penetrating it. RT surfaces were computed in the single sided geometry. We then purify our system by means of the double sided geometry, dual to the thermofield double state. We present 3 dimensional Penrose diagrams of the dominant phase. We then argue that there are two possible RT surfaces. We show that one of them is an increasing function of time, while the other is constant representing the saturation at late time. The overall entropy follows a Page curve.\footnote{The reader who is interested in reproducing the curves in this note for different parameters can find a MATLAB script as well as a Mathematica script with a README.m file in the following GitHub repository \url{https://github.com/pinkman98/PageCurve}.}
+
+
+\tableofcontents
+
+\addchap{Introduction}
+\setcounter{chapter}{0}
+\refstepcounter{chapter}
+\label{section 1}
+\input{chap1.tex}
+
+\addchap{Entanglement Entropy}
+\setcounter{chapter}{1}
+\refstepcounter{chapter}
+\label{section 2}
+\input{chap2.tex}
+
+\addchap{Entanglement Entropy in Holographic Theories}
+\setcounter{chapter}{2}
+\refstepcounter{chapter}
+\label{section 3}
+\input{chap3.tex}
+
+
+\addchap{Hawking Radiation, Entropy and Islands}
+\setcounter{chapter}{3}
+\refstepcounter{chapter}
+\label{section 4}
+\input{chap4.tex}
+
+\addchap{Holographic Interface CFT}
+\setcounter{chapter}{4}
+\refstepcounter{chapter}
+\label{section 5}
+\input{chap5.tex}
+
+\addchap{Geodesics in the Single Sided Hot Phase}
+\setcounter{chapter}{5}
+\refstepcounter{chapter}
+\label{section 6}
+\input{chap6.tex}
+
+\addchap{Double Sided Geometry of the Hot Phase and Page Curve}
+\setcounter{chapter}{6}
+\refstepcounter{chapter}
+\label{section 7}
+\input{chap7.tex}
+
+\addchap{Conclusion}\label{section 8}
+\setcounter{chapter}{8}
+\input{chap8.tex}
+
+
+% \appendix
+% \addchap{Appendix}
+% \setcounter{chapter}{A}
+% \input{app.tex}
+
+\appendix
+\addchap{Appendix A}
+\setcounter{chapter}{0}
+\refstepcounter{chapter}
+\label{appendix A}
+\input{AppA.tex}
+
+\appendix
+\addchap{Appendix B}
+\setcounter{chapter}{1}
+\refstepcounter{chapter}
+\label{appendix B}
+\input{AppB.tex}
+
+\appendix
+\addchap{Appendix C}
+\setcounter{chapter}{2}
+\refstepcounter{chapter}
+\label{appendix D}
+\input{AppD.tex}
+
+\appendix
+\addchap{Appendix D}
+\setcounter{chapter}{3}
+\refstepcounter{chapter}
+\label{appendix E}
+\input{AppE.tex}
+
+\appendix
+\addchap{Appendix E}
+\setcounter{chapter}{4}
+\refstepcounter{chapter}
+\label{appendix F}
+\input{AppF.tex}
+
+
+\bibliography{biblio}
+
+
+\end{document}

@@ -1,0 +1,31 @@
+This Appendix refers to chapter \ref{section 7}.
+
+\section{Cutoff surface}
+
+The cutoff surface in the $(q,p)$ coordinates is not a trivial surface at constant $p$. It is rather a $(q,p)$ dependant surface. To find this surface we have to map $r$ to $(q,p)$ through (\ref{Kruskal coord}) and (\ref{Penrose coord}),
+\begin{equation}
+    r = r_h\frac{\cos(q)}{\cos(p)}.
+\end{equation}
+Then the cutoff surface is given by,
+\begin{equation}\label{cutoff}
+    \frac{1}{\epsilon} = r_h\frac{\cos(q)}{\cos(p)}\implies \cos(p)=\epsilon r_h \cos(q).
+\end{equation}
+
+\section{$q$ to $t$ at the cutoff}
+
+We want to recover the time dependence of the RT surface in eq. (\ref{c'est bon}). Using (\ref{Kruskal coord}) we find,
+\begin{equation}
+    \frac{v}{u} = \tanh\left(\frac{r_h t}{\ell}\right).
+\end{equation}
+
+And from (\ref{Penrose coord}), we find,
+\begin{align}
+    \frac{v}{u} &= \frac{\sin(q)\cos(q)}{\sin(p)\cos(p)}\\
+    &= \frac{1}{\epsilon r_h}\sqrt{\frac{1-\cos^2(q)}{1-\epsilon^2r_h^2\cos^2(q)}},
+\end{align}
+where we used (\ref{cutoff}).
+
+Rearranging these two equations gives an expression for $\cos(q)$
+\begin{equation}
+    \cos(q)=\sqrt{\frac{1-\epsilon^2r_h^2\tanh^2\left(\frac{r_h t}{\ell}\right)}{1-\epsilon^4r_h^4\tanh^2\left(\frac{r_h t}{\ell}\right)}}.
+\end{equation}
