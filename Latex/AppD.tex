@@ -1,0 +1,31 @@
+This Appendix refers to chapter \ref{section 5}.
+
+\section{Boundary conditions}
+
+The boundary conditions (\ref{Dirichelet bc}) can be rewritten for the warm phases with centerless blue slices as,
+\begin{equation}
+    2\pi\tau_2 = -\sqrt{M_1}\frac{\ell_2}{\sqrt{A}} {\int_{\sigma_+}}^\infty \text{d}\sigma\, \frac{\sigma\left(\lambda^2-{\lambda_0}^2\right)+M_2-M_1}{\left(\sigma+M_2{\ell_2}^2\right)\sqrt{\sigma\left(\sigma-\sigma_+\right)\left(\sigma-\sigma_-\right)}}.
+\end{equation}
+We make a change of coordinates $s = \sigma/M_1$,
+\begin{equation}\label{eq2}
+    2\pi\tau_2 = -\frac{\ell_2}{\sqrt{A}} {\int_{s_+}}^\infty \text{d}s\, \frac{s\left(\lambda^2-{\lambda_0}^2\right)+\mu-1}{\left(s+\mu{\ell_2}^2\right)\sqrt{s\left(s-s_+\right)\left(s-s_-\right)}}.
+\end{equation}
+In the same way, the red side boundary condition takes the form,
+\begin{equation}\label{eq1}
+    2\pi T\Delta x_1\big|_\text{Hor}-2\pi\tau_1 = \frac{\ell_1}{\sqrt{A}} {\int_{s_+}}^\infty \text{d}s\, \frac{s\left(\lambda^2+{\lambda_0}^2\right)-\mu+1}{\left(s+{\ell_1}^2\right)\sqrt{s\left(s-s_+\right)\left(s-s_-\right)}}.
+\end{equation}
+The LHS of eq. (\ref{eq2}) and (\ref{eq1}) are the functions $-\Tilde{f}_2(\mu)$ and $\Tilde{f}_1(\mu)$ referred to in eq. (\ref{f2 constrain}). As discussed in chapter \ref{section 5}, these functions can be written in terms of the elliptic integrals of the first, second and third kind,
+\begin{align}
+    \bm{K}(\nu) &= \int_{0}^{1} \frac{\mathrm{d}t}{\sqrt{\left(1 - t^2\right)\left(1 - \nu^2 t^2\right)}},\\
+    \bm{E}(\nu) &= \int_0^1 \frac{\sqrt{1-\nu^2 t^2} }{\sqrt{1-t^2}}\,\mathrm{d}t,\\
+    \bm{\Pi}(u,\nu) &= \int_{0}^{1} \frac{1}{1-ut^2} \frac{\mathrm{d}t}{\sqrt{\left(1-\nu t^2\right)\left(1-t^2\right)}}.
+\end{align}
+
+We make the change of coordinates $t^2=s_+/s$ and plug it in (\ref{eq2}),
+\begin{equation}\label{eq22}
+    \Tilde{f}_2(\mu) = \frac{2\ell_2}{\sqrt{As_+}} {\int_{0}}^1 \text{d}t\,\frac{t^2}{s_+} \frac{\frac{s_+}{t^2}\left(\lambda^2-{\lambda_0}^2\right)+\mu-1}{\left(1+\frac{\mu{\ell_2}^2}{s_+}t^2\right)\sqrt{\left(1-t^2\right)\left(1-\frac{s_-}{s_+}t^2\right)}}.
+\end{equation}
+We make the following change $s_\pm=\sigma_\pm/M_1$, $\nu=s_-/s_+s$ and $u=-\mu\ell_2^2/s_+$. We get
+\begin{equation}
+    \Tilde{f}_2(\mu) = \frac{2\ell_2}{\sqrt{As_+}}\left[\frac{1-\mu}{s_+ u}\left(\bm{K}(\nu)-\bm{\Pi}(u,\nu)\right)+\left(\lambda^2-\lambda_0^2\right)\bm{\Pi}(u,\nu)\right].
+\end{equation}
