@@ -1,0 +1,55 @@
+This Appendix refers to chapter \ref{section 6}.
+
+\section{Constants of integration}
+
+We start by deriving eq. (\ref{maconstante}). For geodesic $\gamma_1$ in the red slice we chose to parametrise our paths with respect to $r_1$ rather than $x_1$. The action computed in eq. (\ref{Action}) becomes,
+\begin{equation}\label{Aaction}
+    L = \ell\int d r\sqrt{\frac{1}{r^2-M\ell^2}+r^2\phi'^2}.
+\end{equation}
+Treating $L$ as a one dimensional action, the Euler-Lagrange equation gives,
+\begin{equation}
+    \frac{r^2\phi'}{\sqrt{\frac{1}{r^2-M\ell^2}+r^2\phi'^2}}= \frac{J}{\ell},
+\end{equation}
+where $J$ is a constant of integration. Rearranging this equation, we get,
+\begin{equation}
+    r^2\phi'^2(r^2-J^2/\ell^2)(r^2-r_h^2)=\frac{J^2}{\ell^2},
+\end{equation}
+where $r_h=\ell\sqrt{M}$. Integrating this equation a second time gives
+\begin{equation}\label{therealsol}
+    x(r) = \pm\frac{\ell_1}{r_h_1}\tanh\left(\frac{J_1}{r_h_1}\sqrt{\frac{r_1^2-r_h_1^2}{r_1^2\ell_1^2-J_1^2}}\right) + c_1
+\end{equation}
+where $c_1$ is a constant of integration. We recovered the indices to make our point clear that we are in the red slice.
+
+The $\gamma_1(\sigma)$ geodesic has the following boundary conditions,
+\begin{align}
+    x_1(1/\epsilon) = \frac{A}{2} = \frac{L_1-h}{2}, && x_1(r_1(\sigma)) = \alpha_1(\sigma).
+\end{align}
+
+Plugging these boundary conditions in the solution (\ref{therealsol}), we find,
+\begin{align}
+    \frac{A}{2} &= \frac{\ell_1}{r_h_1}\tanh\left(\frac{J_1}{r_h_1}\right) + c_1,\\
+    \alpha_1(\sigma) &= \frac{\ell_1}{r_h_1}\tanh\left(\frac{J_1}{r_h_1}\sqrt{\frac{\sigma}{\sigma+r_h_1^2\ell_1^2-J_1^2}}\right) + c_1,
+\end{align}
+where we considered the positive solution $x_1\geq0$. Taking the difference of the two equations, and rearranging a bit, we find,
+\begin{equation}
+    \tanh \left( {r_h}_1 \frac{2x_1(\sigma) - A}{2\ell_1}\right) = \frac{C(\sigma)-D(\sigma)}{1-C(\sigma)D(\sigma)},
+\end{equation}
+with the functions $C(\sigma)$ and $D(\sigma)$ given in eq (\ref{CD}). The solution is,
+\begin{equation}
+    J_1(\sigma) = \frac{\kappa r_h_1^3 + \kappa r_h_1 \sigma + \sqrt{
+\kappa^2 r_h_1^4 \sigma - \kappa^4 r_h_1^4 \sigma + \kappa^2 r_h_1^2 \sigma^2 - 
+  \kappa^4 r_h_1^2 \sigma^2}}{r_h_1^2 + \kappa^2 \sigma},
+\end{equation}
+where $\beta$ is given by,
+\begin{equation}
+    \kappa = \ell_1\tanh\left( {r_h}_1 \frac{2x_1(\sigma) - A}{2\ell_1}\right).
+\end{equation}
+
+For the case of $\gamma_2(\sigma)$, we used the solution (\ref{solution phi}). The boundary conditions are symmetric in this case,
+\begin{align}
+    r_2(\sigma) = r_2(-\sigma) = \frac{E_2}{{r_h}_2\ell_2}\frac{1}{\sqrt{\frac{E_2^2}{r_h_2^2\ell_2^2}\cosh^2\left(r_h_2\frac{\pm x_2(\sigma)}{\ell_2}+c_2\right)-\sinh^2\left(r_h_2\frac{\pm x_2(\sigma)}{\ell_2}+c_2\right)}}.
+\end{align}
+This implies that $c_2=0$. Inverting this equation for $E_2$, we get,
+\begin{equation}
+    E_2 = {r_h}_2\ell_2\sinh\left(r_h_2\frac{ x_2(\sigma)}{\ell_2}\right) \sqrt{\frac{\sigma+{r_h}_2^2}{(\sigma+{r_h}_2^2)\cosh^2\left(r_h_2\frac{ x_2(\sigma)}{\ell_2}\right)-1}}.
+\end{equation}
